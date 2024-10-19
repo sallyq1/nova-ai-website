@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components
+{
+
+    .logo-ticker
+    {
+        @apply h-8 w-auto text-white z-50;
+
+    }
+
+    .section-subtext
+    {
+        @apply font-light text-xl tracking-tight w-[335px] md:w-[776px] text-center text-white/70 leading-relaxed
+    }
+
+    .section-title
+    {
+       @apply font-medium text-[48px] md:text-[60px] leading-none text-white w-[335px] md:w-[728px] text-center leading-relaxed 
+    }
+
+    .thin-border
+    {
+
+        @apply border-[1.2px] border-white/30
+    }
+
+    .thin-border-15
+    {
+
+        @apply border-[1.5px]  border-white/25
+    }
+
+    .paragraph
+    {
+      @apply text-white font-light tracking-tight 
+    }
+
+    .gradient-text
+    {
+      @apply bg-custom-linear text-transparent bg-clip-text
+    }
+
+    
+
+
+}
+
+
+
+.stroke-gradient {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.01));
+    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.01));
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.01));
+    color: transparent;
+  }
+
+
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar in IE, Edge, and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .card-gradient
+  {
+    background: rgb(23,5,5);
+    background: linear-gradient(80deg, rgba(7, 7, 7, 0.2) 10%, rgba(7, 7, 7, 0.3) 20%,  rgba(140,69,255,.50) 100%);
+  }
+
