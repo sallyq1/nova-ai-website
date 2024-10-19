@@ -105,8 +105,8 @@ const TestimonialsColumn = (props: {
         duration: props.duration || 10,
       }}
     >
-      {props.testimonials.map((testimonial) => (
-        <div className="  flex flex-col gap-5 thin-border-15 card-gradient rounded-xl p-10 items-start justify-center">
+      {props.testimonials.map((testimonial,index) => (
+        <div key={index} className="  flex flex-col gap-5 thin-border-15 card-gradient rounded-xl p-10 items-start justify-center">
           <p className="paragraph text-[24px]">{testimonial.text}</p>
           <div className="flex gap-5 items-center">
             <div className="relative">
@@ -128,8 +128,8 @@ const TestimonialsColumn = (props: {
       ))}
 
       {/* duplicate set of testimonials for animation */}
-      {props.testimonials.map((testimonial) => (
-        <div className=" flex flex-col gap-5 thin-border-15 card-gradient rounded-xl p-10 items-start justify-center">
+      {props.testimonials.map((testimonial,index ) => (
+        <div key={index}  className=" flex flex-col gap-5 thin-border-15 card-gradient rounded-xl p-10 items-start justify-center">
           <p className="paragraph text-[24px]">{testimonial.text}</p>
           <div className="flex gap-5 items-center">
             <div className="relative">
