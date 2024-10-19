@@ -159,7 +159,7 @@ export const Testimonials = () => {
       <div className="py-5 flex flex-col items-center justify-center w-[335px] md:w-[384px] gap-5" >
         <h1 className="section-title gradient-text">Beyond expectations</h1>
         <p className="section-subtext mb-5">
-          Our revolutionary AI SEO tools have transformed our clients'
+          Our revolutionary AI SEO tools have transformed our clients&apos
           strategies.
         </p>
       </div>
